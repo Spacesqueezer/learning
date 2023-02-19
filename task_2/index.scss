@@ -25,9 +25,9 @@ a {
 }
 
 body {
-  background-color: blue;
+  background-color: $BKG_COLOR;
   width: $WIDTH;
-  height: calc(5.025 * $WIDTH);
+  height: calc(7236 * $WIDTH);
   margin: 0;
 }
 
@@ -128,8 +128,7 @@ body {
 
 .first-block {
   width: $WIDTH;
-  height: calc(0.61 * $WIDTH);
-  background-color: $BKG_COLOR;
+  height: calc(880 / 1440 * $WIDTH);
 
   &__logo-text {
     position: absolute;
@@ -314,18 +313,98 @@ body {
 
 .second-block {
   position: absolute;
-  width: calc(1289 / 1440 * $WIDTH);
+  display: flex;
+  justify-content: center;
+  width: $WIDTH;
   height: calc(884.65 / 1440 * $WIDTH);
-  left: calc(75 / 1440 * $WIDTH);
-  top: calc(879 / 1440 * $WIDTH);
-  background-color: #1b1b1a;
+  top: calc(880 / 1440 * $WIDTH);
 
   &__glows {
     position: absolute;
-    width: calc(1290 / 1440 * $WIDTH);
+    width: calc(1020 / 1440 * $WIDTH);
     height: calc(829.65 / 1440 * $WIDTH);
-    left: calc(51 / 1440 * $WIDTH);
-    bottom: 0;
+    left: calc(126 / 1440 * $WIDTH);
+    top: calc(55 / 1440 * $WIDTH);
+
+    &__1 {
+      position: absolute;
+      width: calc(826 / 1440 * $WIDTH);
+      height: calc(551 / 1440 * $WIDTH);
+      left: calc(170 / 1440 * $WIDTH);
+      top: calc(5 / 1440 * $WIDTH);
+
+      background: #392924;
+      filter: blur(calc(150 / 1440 * $WIDTH));
+      border-radius: calc(300 / 1440 * $WIDTH);
+    }
+    &__2 {
+      position: absolute;
+      width: calc(508 / 1440 * $WIDTH);
+      height: calc(339 / 1440 * $WIDTH);
+      left: calc(329 / 1440 * $WIDTH);
+      top: calc(140 / 1440 * $WIDTH);
+
+      background: rgba(255, 209, 128, 0.23);
+      filter: blur(calc(75 / 1440 * $WIDTH));
+      border-radius: calc(300 / 1440 * $WIDTH);
+    }
+    &__3 {
+      position: absolute;
+      width: calc(508 / 1440 * $WIDTH);
+      height: calc(499.83 / 1440 * $WIDTH);
+      left: calc(100 / 1440 * $WIDTH);
+      top: calc(280 / 1440 * $WIDTH);
+
+      background: rgba(255, 209, 128, 0.23);
+      filter: blur(calc(125 / 1440 * $WIDTH));
+      border-radius: calc(300 / 1440 * $WIDTH);
+      transform: rotate(135deg);
+    }
+    &__4 {
+      position: absolute;
+      width: calc(354.97 / 1440 * $WIDTH);
+      height: calc(349.26 / 1440 * $WIDTH);
+      left: calc(420 / 1440 * $WIDTH);
+      top: calc(75 / 1440 * $WIDTH);
+
+      background: rgba(245, 157, 93, 0.45);
+      filter: blur(calc(125 / 1440 * $WIDTH));
+      border-radius: calc(300 / 1440 * $WIDTH);
+      transform: rotate(135deg);
+    }
+    &__5 {
+      position: absolute;
+      width: calc(214 / 1440 * $WIDTH);
+      height: calc(132 / 1440 * $WIDTH);
+      left: calc(500 / 1440 * $WIDTH);
+      top: calc(310 / 1440 * $WIDTH);
+
+      background: rgba(255, 207, 122, 0.72);
+      filter: blur(calc(75 / 1440 * $WIDTH));
+      border-radius: calc(300 / 1440 * $WIDTH);
+    }
+    &__6 {
+      position: absolute;
+      width: calc(156 / 1440 * $WIDTH);
+      height: calc(96 / 1440 * $WIDTH);
+      left: calc(570 / 1440 * $WIDTH);
+      top: calc(328 / 1440 * $WIDTH);
+
+      background: rgba(238, 214, 214, 0.22);
+      filter: blur(calc(75 / 1440 * $WIDTH));
+      border-radius: calc(300 / 1440 * $WIDTH);
+    }
+    &__7 {
+      position: absolute;
+      width: calc(156 / 1440 * $WIDTH);
+      height: calc(96 / 1440 * $WIDTH);
+      left: calc(300 / 1440 * $WIDTH);
+      top: calc(339 / 1440 * $WIDTH);
+
+      background: rgba(255, 155, 82, 0.71);
+      filter: blur(calc(50 / 1440 * $WIDTH));
+      border-radius: calc(300 / 1440 * $WIDTH);
+    }
   }
 
   &__header {
@@ -379,7 +458,157 @@ body {
     position: absolute;
     width: calc(1289 / 1440 * $WIDTH);
     height: calc(495 / 1440 * $WIDTH);
-
     top: calc(190 / 1440 * $WIDTH);
+  }
+
+  &__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    height: calc(50 / 1440 * $WIDTH);
+    width: calc(986 / 1440 * $WIDTH);
+    top: calc(685 / 1440 * $WIDTH);
+
+    &__item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: calc(265 / 1440 * $WIDTH);
+      height: 100%;
+
+      &__icon {
+        height: 100%;
+      }
+
+      &__text {
+        font-family: "Lab Grotesque", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: calc(16 / 1440 * $WIDTH);
+        line-height: calc(24 / 1440 * $WIDTH);
+        /* identical to box height, or 150% */
+        margin-left: calc(30 / 1440 * $WIDTH);
+
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.third-block {
+  position: absolute;
+  width: $WIDTH;
+
+  height: calc(660 / 1440 * $WIDTH);
+  top: calc(1760 / 1440 * $WIDTH);
+
+  &__header {
+    position: absolute;
+    width: calc(224 / 1440 * $WIDTH);
+    height: calc(55 / 1440 * $WIDTH);
+    left: calc(206 / 1440 * $WIDTH);
+    top: calc(90 / 1440 * $WIDTH);
+
+    font-family: "Lab Grotesque", sans-serif;
+    font-style: normal;
+    font-weight: 250;
+    font-size: calc(40 / 1440 * $WIDTH);
+    line-height: calc(55 / 1440 * $WIDTH);
+    /* identical to box height, or 138% */
+
+    letter-spacing: calc(0.07 / 1440 * $WIDTH) em;
+    text-transform: uppercase;
+
+    background: linear-gradient(
+      233.62deg,
+      #ffffff 28.79%,
+      rgba(255, 255, 255, 0) 98.2%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+
+  &__text {
+    position: absolute;
+    width: calc(370 / 1440 * $WIDTH);
+    height: calc(198 / 1440 * $WIDTH);
+    left: calc(207 / 1440 * $WIDTH);
+    top: calc(165 / 1440 * $WIDTH);
+
+    font-family: "Lab Grotesque", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: calc(18 / 1440 * $WIDTH);
+    line-height: calc(33 / 1440 * $WIDTH);
+
+    color: #ffffff;
+  }
+
+  &__second-text {
+    position: absolute;
+    width: calc(234 / 1440 * $WIDTH);
+    height: calc(48 / 1440 * $WIDTH);
+    left: calc(617 / 1440 * $WIDTH);
+    top: calc(487 / 1440 * $WIDTH);
+
+    font-family: "Lab Grotesque", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: calc(14 / 1440 * $WIDTH);
+    line-height: calc(24 / 1440 * $WIDTH);
+
+    color: #ffffff;
+  }
+
+  &__image {
+    position: absolute;
+    width: calc(484 / 1440 * $WIDTH);
+    height: calc(481 / 1440 * $WIDTH);
+    left: calc(700 / 1440 * $WIDTH);
+    top: calc(60 / 1440 * $WIDTH);
+  }
+
+  &__hose {
+    position: absolute;
+    width: calc(20 / 1440 * $WIDTH);
+    height: calc(20 / 1440 * $WIDTH);
+    left: calc(617 / 1440 * $WIDTH);
+    top: calc(440 / 1440 * $WIDTH);
+  }
+  &__power-button {
+    position: absolute;
+    width: calc(20 / 1440 * $WIDTH);
+    height: calc(20 / 1440 * $WIDTH);
+    left: calc(706 / 1440 * $WIDTH);
+    top: calc(440 / 1440 * $WIDTH);
+  }
+
+  &__line {
+    position: absolute;
+    width: calc(31 / 1440 * $WIDTH);
+    height: 0;
+    left: calc(658 / 1440 * $WIDTH);
+    top: calc(450 / 1440 * $WIDTH);
+    margin: 0;
+
+    border: 1px solid #949494;
+  }
+
+  &__circle-1 {
+    position: absolute;
+    width: calc(98 / 1440 * $WIDTH);
+    height: calc(98 / 1440 * $WIDTH);
+    left: calc(784 / 1440 * $WIDTH);
+    top: calc(280 / 1440 * $WIDTH);
+
+    border: calc(1 / 1440 * $WIDTH) solid #ffcf7a;
+    border-radius: 50%;
+    filter: drop-shadow(
+      calc(0 / 1440 * $WIDTH) calc(4 / 1440 * $WIDTH) calc(23 / 1440 * $WIDTH)
+        #ffe2a4
+    );
   }
 }
