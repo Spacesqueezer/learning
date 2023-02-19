@@ -24,11 +24,12 @@ body {
   background-color: blue;
   width: 100vw;
   height: 502.5vw;
+  margin: 0;
 }
 
 .glows {
   position: absolute;
-  width: 181.5vw;
+  width: 100vw;
   height: 282.0833333333vw;
   left: -27.2222222222vw;
   top: -25.9722222222vw;

@@ -28,11 +28,12 @@ body {
   background-color: blue;
   width: $WIDTH;
   height: calc(5.025 * $WIDTH);
+  margin: 0;
 }
 
 .glows {
   position: absolute;
-  width: calc(2613.6 / 1440 * $WIDTH);
+  width: $WIDTH;
   height: calc(4062 / 1440 * $WIDTH);
   left: calc(-392 / 1440 * $WIDTH);
   top: calc(-374 / 1440 * $WIDTH);
