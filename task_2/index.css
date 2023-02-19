@@ -1,0 +1,325 @@
+@font-face {
+  font-family: "Scania Sans";
+  src: url("../fonts/ScaniaSansCYHeadline-Regular.ttf");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lab Grotesque";
+  src: url("../fonts/LabGrotesque-Regular.ttf");
+  font-style: normal;
+}
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  cursor: pointer;
+}
+
+body {
+  background-color: blue;
+  width: 100vw;
+  height: 502.5vw;
+}
+
+.glows {
+  position: absolute;
+  width: 181.5vw;
+  height: 282.0833333333vw;
+  left: -27.2222222222vw;
+  top: -25.9722222222vw;
+  opacity: 0.5;
+}
+.glows__1 {
+  position: absolute;
+  width: 27.1069444444vw;
+  height: 11.3465277778vw;
+  left: 84.6395833333vw;
+  top: 40vw;
+  background: #a74e02;
+  filter: blur(6.9444444444vw);
+  border-radius: 50%;
+  transform: rotate(161.87deg);
+}
+.glows__2 {
+  position: absolute;
+  width: 60.7583333333vw;
+  height: 64.4194444444vw;
+  left: 115vw;
+  top: 2.9861111111vw;
+  background: #000000;
+  filter: blur(17.3611111111vw);
+  border-radius: 20.8333333333vw;
+  transform: rotate(45deg);
+}
+.glows__3 {
+  position: absolute;
+  width: 60.7583333333vw;
+  height: 64.4194444444vw;
+  left: 18.3291666667vw;
+  top: 31.7361111111vw;
+  background: #000000;
+  filter: blur(17.3611111111vw);
+  border-radius: 20.8333333333vw;
+  transform: rotate(45deg);
+}
+.glows__4 {
+  position: absolute;
+  width: 39.5833333333vw;
+  height: 19.7222222222vw;
+  left: 9.6527777778vw;
+  top: 236.3888888889vw;
+  background: #000000;
+  filter: blur(6.9444444444vw);
+  border-radius: 20.8333333333vw;
+}
+.glows__5 {
+  position: absolute;
+  width: 5.8333333333vw;
+  height: 5.3472222222vw;
+  left: 113.1944444444vw;
+  top: 30.5555555556vw;
+  background: rgba(201, 115, 53, 0.68);
+  filter: blur(3.4722222222vw);
+  border-radius: 34.7222222222vw;
+  transform: rotate(-180deg);
+}
+.glows__6 {
+  position: absolute;
+  width: 13.9708333333vw;
+  height: 6.1027777778vw;
+  left: 90.9722222222vw;
+  top: 45vw;
+  background: #ffcf7a;
+  filter: blur(3.4722222222vw);
+  border-radius: 34.7222222222vw;
+  transform: rotate(161.87deg);
+}
+.glows__7 {
+  position: absolute;
+  width: 42.0138888889vw;
+  height: 13.3333333333vw;
+  left: 68.9583333333vw;
+  top: 55.9722222222vw;
+  background: #000000;
+  filter: blur(6.9444444444vw);
+  border-radius: 50%;
+  transform: rotate(157.75deg);
+}
+
+.first-block {
+  width: 100vw;
+  height: 61vw;
+  background-color: #1b1b1a;
+}
+.first-block__logo-text {
+  position: absolute;
+  width: 9.7222222222vw;
+  height: 4.8611111111vw;
+  left: 8.5416666667vw;
+  top: 5.2777777778vw;
+  font-family: "Scania Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.3888888889vw;
+  line-height: 4.8611111111vw;
+  /* identical to box height, or 350% */
+  color: #ffffff;
+}
+.first-block__text {
+  position: absolute;
+  width: 6.875vw;
+  height: 2.5vw;
+  left: 20.9027777778vw;
+  top: 6.4583333333vw;
+  font-family: "Lab Grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8333333333vw;
+  line-height: 1.25vw;
+  /* or 150% */
+  letter-spacing: 0.05em;
+  color: #6d6d6d;
+}
+.first-block__menu {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 30.2777777778vw;
+  height: 1.1111111111vw;
+  left: 53.4722222222vw;
+  top: 7.1527777778vw;
+}
+.first-block__menu__item {
+  font-family: "Lab Grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9027777778vw;
+  line-height: 1.1111111111vw;
+  text-align: right;
+  letter-spacing: 0.0034722222vw;
+  text-transform: uppercase;
+  color: #949494;
+}
+.first-block__menu__item:hover {
+  color: #ffcf7a;
+}
+.first-block__phone-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 3.4722222222vw;
+  height: 3.4722222222vw;
+  left: 87.9861111111vw;
+  top: 5.9027777778vw;
+  background: #ffcf7a;
+  border-radius: 0.1388888889vw;
+}
+.first-block__phone-button__gradient {
+  width: 100%;
+  height: 100%;
+}
+.first-block__phone-button__icon {
+  position: absolute;
+  width: 1.25vw;
+  height: 1.25vw;
+}
+.first-block__fireplace-image {
+  position: absolute;
+  width: 48.6111111111vw;
+  height: 29.7916666667vw;
+  left: 42.8472222222vw;
+  top: 15.7638888889vw;
+}
+.first-block__big-gradient-text {
+  position: absolute;
+  width: 54.1666666667vw;
+  height: 11.1805555556vw;
+  left: 8.5416666667vw;
+  top: 15.7638888889vw;
+  font-family: "Lab Grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 250;
+  font-size: 4.4444444444vw;
+  line-height: 5.5555555556vw;
+  letter-spacing: 0.0034722222vw;
+  text-transform: uppercase;
+  background: linear-gradient(226.43deg, #ffffff 49.37%, rgba(255, 255, 255, 0) 99.78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.first-block__price {
+  position: absolute;
+  width: 12.3611111111vw;
+  height: 2.7777777778vw;
+  left: 8.75vw;
+  top: 28.9583333333vw;
+  font-family: "Lab Grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 2.3611111111vw;
+  line-height: 2.7777777778vw;
+  letter-spacing: 0.0034722222vw;
+  color: #ffcf7a;
+}
+.first-block__icon {
+  position: absolute;
+  width: 2.0833333333vw;
+  height: 2.0833333333vw;
+}
+.first-block__icon--gear {
+  left: 10.9722222222vw;
+  top: 37.7083333333vw;
+}
+.first-block__icon--plane {
+  left: 23.75vw;
+  top: 37.7083333333vw;
+}
+.first-block__icon__text {
+  font-family: "Lab Grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9722222222vw;
+  line-height: 1.5277777778vw;
+  text-align: center;
+  color: #ffffff;
+}
+.first-block__icon__text--gear {
+  position: absolute;
+  width: 6.3194444444vw;
+  height: 3.0555555556vw;
+  left: 8.75vw;
+  top: 40.7638888889vw;
+}
+.first-block__icon__text--plane {
+  position: absolute;
+  width: 8.3333333333vw;
+  height: 3.0555555556vw;
+  left: 20.625vw;
+  top: 41.1805555556vw;
+}
+
+.second-block {
+  position: absolute;
+  width: 89.5138888889vw;
+  height: 61.4340277778vw;
+  left: 5.2083333333vw;
+  top: 61.0416666667vw;
+  background-color: #1b1b1a;
+}
+.second-block__glows {
+  position: absolute;
+  width: 89.5833333333vw;
+  height: 57.6145833333vw;
+  left: 3.5416666667vw;
+  bottom: 0;
+}
+.second-block__header {
+  position: absolute;
+  width: 46.5972222222vw;
+  height: 8.3333333333vw;
+  left: 26.7361111111vw;
+  font-family: "Lab Grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 250;
+  font-size: 2.7777777778vw;
+  line-height: 4.1666666667vw;
+  /* or 150% */
+  text-align: center;
+  letter-spacing: 0.0048611111vw em;
+  text-transform: uppercase;
+  background: linear-gradient(200.22deg, #ffffff 31.8%, rgba(255, 255, 255, 0) 87.73%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.second-block__text {
+  position: absolute;
+  width: 57.0833333333vw;
+  height: 4.5833333333vw;
+  left: 21.4583333333vw;
+  top: 9.7916666667vw;
+  font-family: "Lab Grotesque", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.3888888889vw;
+  line-height: 2.2916666667vw;
+  text-align: center;
+  letter-spacing: 0.0020833333vw;
+  color: #ffffff;
+}
+.second-block__fireplace-image {
+  position: absolute;
+  width: 89.5138888889vw;
+  height: 34.375vw;
+  top: 13.1944444444vw;
+}
+
+/*# sourceMappingURL=index.css.map */
