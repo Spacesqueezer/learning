@@ -1523,7 +1523,6 @@ body {
 
   &__phone {
     position: absolute;
-    width: calc(241 / 1440 * $WIDTH);
     height: calc(33 / 1440 * $WIDTH);
     left: calc(1038 / 1440 * $WIDTH);
     top: calc(235 / 1440 * $WIDTH);
