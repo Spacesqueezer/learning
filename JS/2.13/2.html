@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+</head>
+<html>
+<body>
+
+<script>
+  let value = prompt('Каков диапазон?');
+  newNumber:
+  for (let i=2; i<=value; i++){
+    for (let j = 2; j < i; j++) {
+      if (i % j === 0) continue newNumber;
+    }
+    alert( i );
+  }
+</script>
+</body>
+</html>
